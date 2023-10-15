@@ -35,15 +35,9 @@ filters.forEach((filter) => {
 });
 
 function toogleList() {
-  if (ull.classList.contains("show")) {
-    ull.classList.remove("show");
-    ulr.classList.remove("show");
-    menu.classList.remove("shd");
-  } else {
-    ull.classList.add("show");
-    ulr.classList.add("show");
-    menu.classList.add("shd");
-  }
+  ull.classList.toggle("show");
+  ulr.classList.toggle("show");
+  menu.classList.toggle("shd");
 }
 
 function toggleImage() {
@@ -61,7 +55,7 @@ function toggleImage() {
 }
 
 function skillsProgress() {
-  if (window.scrollY >= skillsSection.offsetTop - 100) {
+  if (window.scrollY >= (skillsSection.offsetTop + skillsSection.offsetHeight - window.innerHeight)) {
     spans.forEach((span) => {
       span.style.width = span.dataset.width;
     });
