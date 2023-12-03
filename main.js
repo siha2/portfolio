@@ -55,7 +55,7 @@ function toggleImage() {
 }
 
 function skillsProgress() {
-  if (window.scrollY >= (skillsSection.offsetTop + skillsSection.offsetHeight - window.innerHeight)) {
+  if (window.scrollY >= skillsSection.offsetTop) {
     spans.forEach((span) => {
       span.style.width = span.dataset.width;
     });
