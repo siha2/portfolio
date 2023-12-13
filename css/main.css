@@ -7,6 +7,9 @@
 }
 :root {
   --main-color: #F85C70;
+  --linkedin-color: #0a66c2;
+  --github-color: #333;
+  --whatsapp-color: #25d366;
 }
 html {
   scroll-behavior: smooth;
@@ -78,6 +81,20 @@ ul {
   color: white;
   margin-right: 15px;
   font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.header .container ul li i.linkedin:hover {
+  color: var(--linkedin-color);
+  background-color: white;
+}
+.header .container ul li i.github:hover {
+  color: var(--github-color);
+  background-color: white;
+}
+.header .container ul li i.whatsapp:hover {
+  color: var(--whatsapp-color);
+  background-color: white;
 }
 .header .container .content {
   width: 100%;
@@ -116,6 +133,10 @@ ul {
   color: #fff;
   background-color: var(--main-color);
   border-radius: 100px;
+  transition: 0.3s;
+}
+.header .container .content .download-cv:hover {
+  background-color: #e41631;
 }
 /* nav */
 nav {
@@ -347,6 +368,21 @@ nav .container ul li a.active {
 }
 .about .container .card .social li a {
   color: var(--main-color);
+}
+.about .container .card .social li a i {
+  transition: 0.4s;
+}
+.about .container .card .social li a i.linkedin:hover {
+  color: var(--linkedin-color);
+  transform: translateY(-4px);
+}
+.about .container .card .social li a i.github:hover {
+  color: var(--github-color);
+  transform: translateY(-4px);
+}
+.about .container .card .social li a i.whatsapp:hover {
+  color: var(--whatsapp-color);
+  transform: translateY(-4px);
 }
 /* skills */
 .skills {
@@ -674,6 +710,21 @@ nav .container ul li a.active {
 }
 .contact .content .info .social li a {
   color: var(--main-color);
+}
+.contact .content .info .social li a i {
+  transition: 0.4s;
+}
+.contact .content .info .social li a i.linkedin:hover {
+  color: var(--linkedin-color);
+  transform: translateY(-4px);
+}
+.contact .content .info .social li a i.github:hover {
+  color: var(--github-color);
+  transform: translateY(-4px);
+}
+.contact .content .info .social li a i.whatsapp:hover {
+  color: var(--whatsapp-color);
+  transform: translateY(-4px);
 }
 /* footer */
 footer {
